@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SecondKadaiApp
 //
-//  Created by 五藤幹也 on 2019/01/07.
+//  Created by on 2019/01/07.
 //  Copyright © 2019 mvknxtg8102. All rights reserved.
 //
 
