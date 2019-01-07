@@ -13,9 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var input_name_text_field: UITextField!
     @IBAction func handle(_ sender: Any) {
     }
-    // 入力された名前を受け取るためのプロパティ（変数）を宣言しておく
-    //var input_data: String? = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +23,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        // 遷移先のResultViewControllerで宣言しているinput_name_display_labelに値を代入して渡す
+        // 遷移先のResultViewControllerで宣言しているinput_name_dataに値を代入して渡す
         let input_data = input_name_text_field.text!
         resultViewController.input_name_data = input_data
     }
